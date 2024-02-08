@@ -9,14 +9,14 @@ import java.util.Scanner;
 
 public class HospitalManagementSystem 
 {
-	private static final String url="jdbc:mysql://localhost:3306/?user=root";
+	private static final String url="jdbc:mysql://localhost:3306/hospital";
 	private static final String password="balaji";
 	private static final String username="root";
 
 
 	public static void main(String[] args) {
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver");
 		}
 		catch(ClassNotFoundException e)
 		{
